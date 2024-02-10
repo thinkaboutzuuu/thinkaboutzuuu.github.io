@@ -1,0 +1,14 @@
+/* style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .gradient-background {
+    height: 200vh; /* Ensures we have enough content to scroll */
+    background: linear-gradient(to bottom, #a18cd1 0%, #fbc2eb 100%);
+  }
+  .content {
+    padding: 20px;
+  }
+  

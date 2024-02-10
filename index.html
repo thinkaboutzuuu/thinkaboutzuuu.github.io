@@ -4,21 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Personal Website</title>
-<style>
-  body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-  }
-  .gradient-background {
-    height: 200vh; /* Ensures we have enough content to scroll */
-    background: linear-gradient(to bottom, #a18cd1 0%, #fbc2eb 100%);
-  }
-  .content {
-    padding: 20px;
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
+
+
+
+
 <body>
 
 <div class="gradient-background">
@@ -29,15 +20,11 @@
   </div>
 </div>
 
-<script>
-  window.addEventListener('scroll', function() {
-    const gradientEl = document.querySelector('.gradient-background');
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    // Adjust the gradient based on the scroll position
-    // For instance, change the opacity or the background position
-    // This is a placeholder for where you'd implement the dynamic effect
-  });
-</script>
+
+<script src="script.js"></script>
+
+
+
 
 </body>
 </html>
