@@ -11,32 +11,33 @@
     height: 100%;
   }
   .gradient-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50vh; /* Adjust this value to control where the gradient ends */
+    height: 200vh; /* Ensures we have enough content to scroll */
     background: linear-gradient(to bottom, #a18cd1 0%, #fbc2eb 100%);
-    z-index: -1; /* Ensures content scrolls over the gradient */
   }
   .content {
-    position: relative;
-    z-index: 1;
-    background-color: transparent;
     padding: 20px;
-    min-height: 150vh; /* Ensures the page is scrollable */
   }
 </style>
 </head>
 <body>
 
-<div class="gradient-background"></div>
-
-<div class="content">
-  <h1>Welcome to My Website</h1>
-  <p>This is a demonstration of a fixed gradient background at the top half of the screen that "disappears" as you scroll down.</p>
-  <!-- Add more content here as needed -->
+<div class="gradient-background">
+  <div class="content">
+    <h1>Welcome to My Website</h1>
+    <p>Scroll down to see the gradient effect.</p>
+    <!-- More content here -->
+  </div>
 </div>
+
+<script>
+  window.addEventListener('scroll', function() {
+    const gradientEl = document.querySelector('.gradient-background');
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    // Adjust the gradient based on the scroll position
+    // For instance, change the opacity or the background position
+    // This is a placeholder for where you'd implement the dynamic effect
+  });
+</script>
 
 </body>
 </html>
